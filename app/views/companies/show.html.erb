@@ -5,5 +5,13 @@
   <%= @company.name %>
 </p>
 
-<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= render 'complaints/form', complaint:@complaint %>
+<ul>
+<% @company.complaints.each do |complaint| %>
+  <li><%= complaint.content %>
+  <%= complaint.user.name %></li>
+<% end %>
+</ul>
+<%= link_to 'Edit', edit_company_path(@company) %>
+|
 <%= link_to 'Back', companies_path %>
