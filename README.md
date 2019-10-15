@@ -1,5 +1,5 @@
 # README
-https://peaceful-fortress-73227.herokuapp.com/
+https://peaceful-fortress-73227.herokuapp.com
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
