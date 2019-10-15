@@ -7,7 +7,7 @@
 
 <%= render 'complaints/form', complaint:@complaint %>
 <ul>
-<% @company.complaints.each do |complaint| %>
+<% @company.complaints.order(created_at: :desc).each do |complaint| %>
   <li><%= complaint.content %>
   <%= complaint.user.name %></li>
 <% end %>
