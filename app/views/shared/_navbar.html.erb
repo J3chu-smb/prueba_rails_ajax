@@ -14,7 +14,7 @@
         <a <%= link_to "Inicio de Sesión", new_user_session_path%></a>
       </li>
       <li class="nav-item ml-4 ml-2">
-        <a <%= link_to "Cierre de Sesión", destroy_user_session_path%></a>
+        <a <%= link_to "Cierre de Sesión", destroy_user_session_path, method: :delete %></a>
       </li>
     </ul>
   </div>
