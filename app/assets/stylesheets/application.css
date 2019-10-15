@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.bgnav {
+  background-color: #fa8b72;
+}
+
+.navbar {
+  border-radius: 30px;
+  padding: 20px;
+  height: 100px;
+}

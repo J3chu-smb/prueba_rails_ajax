@@ -6,15 +6,15 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link mr-3" href="#">Registro
-          <span class="sr-only">(current)</span></a>
+      <li class="nav-item mr-4 ml-2">
+        <a <%= link_to "Registro", new_user_registration_path%></a>
+          <span class="sr-only">(current)</span>
       </li>
-      <li class="nav-item">
-        <a class="nav-link mr-3" href="#">Inicio de Sesión</a>
+      <li class="nav-item ml-2">
+        <a <%= link_to "Inicio de Sesión", new_user_session_path%></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cierre de Sesión</a>
+      <li class="nav-item ml-4 ml-2">
+        <a <%= link_to "Cierre de Sesión", destroy_user_session_path%></a>
       </li>
     </ul>
   </div>
